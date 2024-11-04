@@ -1,0 +1,94 @@
+h1 { text-align: center;
+    font-size: 55px
+}
+
+body {  
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif; 
+        text-align: center; 
+        margin-top: 50px;
+        font-size: 30px;
+        background-color: blanchedalmond;
+
+}
+
+#headsBtn {
+        font-size: 25px;
+        border-radius: 8px;
+
+}
+#tailsBtn {
+        font-size: 25px;
+        border-radius: 8px;
+
+}
+
+#result { 
+    font-size: 2em; 
+    margin-top: 26px; 
+}
+#coinImage {
+        
+        width: 200px;
+        height: 100px;
+        transition: transform 1s ease-in-out; /* Add a smooth transition */
+    }
+/* CSS file or <style> block in HTML */
+.link {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+        text-decoration: none;
+      }
+      
+      .button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      
+      .button.glow {
+        background-color: lightyellow;
+      }
+      
+      .message {
+        color: white;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(5deg); }
+        30% { transform: translate(3px, 2px) rotate(9deg); }
+        40% { transform: translate(1px, -1px) rotate(11deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
+      @keyframes fall {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(100vh); }
+    }
+      
+      .earthquake {
+        animation: shake .5s;
+        animation-iteration-count: infinite;
+      }
+
+        
+
+
