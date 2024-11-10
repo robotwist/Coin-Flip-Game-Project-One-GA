@@ -257,7 +257,7 @@ function createNewGameContainer() {
           if (x === playerPosition.x && y === playerPosition.y) {
             output += "@"; // Player character
           } else if (x === enemyPosition.x && y === enemyPosition.y) {
-            output += "E"; // Enemy character
+            output += "MOMMY!"; // Enemy character
           } else {
             output += "."; // Empty space
           }
