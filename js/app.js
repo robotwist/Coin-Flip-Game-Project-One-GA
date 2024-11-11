@@ -153,7 +153,7 @@ function createCaveContainer() {
 // Text-based adventure sequence
 let storyIndex = 0;
 const storySegments = [
-  "You awakened.", "You are lying face up.", "You are half submerged in quarters.", "It must've been a trapdoor in that coin flippage game.", "I knew there was a catch. I knew there was nothing free in life", "puts several quarters into pockets",
+  "You awaken to the sound of dripping water.", "Are you dead?", "Do you need to call the plumber?", "You are lying face up.", "You are half submerged in quarters.", "It must've been a trapdoor in that coin flippage game.", "I knew there was a catch. I knew there was nothing free in life", "puts several quarters into pockets",
   "The darkness is very dark (darker than you remember)", "You call for mommy.", ". . .", "She does not answer.",
   "A faint glimmer of light appears up ahead.",
   "You hear strange noises echoing through the cavern walls.",
@@ -245,7 +245,7 @@ function createNewGameContainer() {
     let isGameOver = false;
     const mapWidth = 20;
     const mapHeight = 10;
-    let enemySpeed = 50; // Start enemy speed at 1 move per second
+    let enemySpeed = 30; // enemy speed 100ms delay adj to 30ms + difficulty
     let timeSurvived = 0;
     const winTime = 1000; // evade the enemy for 100 seconds to win
   
@@ -257,7 +257,7 @@ function createNewGameContainer() {
           if (x === playerPosition.x && y === playerPosition.y) {
             output += "@"; // Player character
           } else if (x === enemyPosition.x && y === enemyPosition.y) {
-            output += "MOMMY!"; // Enemy character
+            output += "Mommy!"; // Enemy character
           } else {
             output += "."; // Empty space
           }
@@ -344,8 +344,12 @@ function createNewGameContainer() {
           justify-content: center;
           align-items: center;
           font-size: 24px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif; 
           z-index: 1000;
           text-align: center;
+          padding: 20px;
+          line-height: 1.5;
+          max-width: 90%
         `;
       
         // Message for game over or win

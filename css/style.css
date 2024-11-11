@@ -85,7 +85,7 @@ body {
     }
       
       .earthquake {
-        animation: shake .5s;
+        animation: shake .25s;
         animation-iteration-count: infinite;
       }
 
