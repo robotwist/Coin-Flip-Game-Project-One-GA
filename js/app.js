@@ -153,7 +153,9 @@ function createCaveContainer() {
 // Text-based adventure sequence
 let storyIndex = 0;
 const storySegments = [
-  "You awaken to the sound of dripping water.", "Are you dead?", "Do you need to call the plumber?", "You are lying face up.", "You are half submerged in quarters.", "It must've been a trapdoor in that coin flippage game.", "I knew there was a catch. I knew there was nothing free in life", "puts several quarters into pockets",
+  "You awaken to the sound of dripping water.", "Drip.", "Drop.", "Are you dead?", "Drip.", "Do you need to call the plumber?", "Drop.", 
+  "You are lying face up.", "You are half submerged in quarters.", "It must've been a trap door in Random Flippage! Flip or Die!", 
+  "I knew there was a catch. I knew I couldn't have that much fun for free.", ". . .puts several quarters into pockets",
   "The darkness is very dark (darker than you remember)", "You call for mommy.", ". . .", "She does not answer.",
   "A faint glimmer of light appears up ahead.",
   "You hear strange noises echoing through the cavern walls.",
@@ -164,8 +166,10 @@ const storySegments = [
   "Mommy?",
   "It is not your mother.",
   "You are flummoxed.", "You cry.", "You lament your existence.", 
-  "You run into the end of the cave, a stalagtite impales you. You also die from exposure and dysentery but you still feel the sharp pain of cave rock through your body.",
-  "This is not grotesque. These are just the facts. You are dead. This is the end. Deal with it. There will be no next chapter. The end."
+  "You run into the end of the cave, a stalagtite impales you.", 
+  "You also die from exposure and dysentery yet you still feel the sharp pain of cave rock through your body.",
+  "This is not grotesque. These are just the facts.", 
+  "You are dead. This is the end. Deal with it.", "There will be no next chapter. The end."
 ];
 
 function startTextStream() {
